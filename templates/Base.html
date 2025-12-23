@@ -1,0 +1,30 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <title>{% block title %}{% endblock %}</title>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div id="toper">
+        {% block toper%}
+        <nav class="navi">
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:8000">Home</a> </li>
+            <li><a href="">About me </a> </li>
+            <li><a href=http://127.0.0.1:8000#here>Contact me</a></li>
+        </ul>
+        </nav>
+        {% endblock %}
+    </div>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="content2">{% block content2 %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        <a href="https://github.com/Elias-Chaibi"> GitHub<img src="{% static 'images/GitHub.png' %}" class="icon" alt="icon GitHub"></a>
+        <a href="https://www.linkedin.com/in/elias-chaibi-584804371/"> LinkedIn<img src="{% static 'images/linkIn_icon.webp' %}" class="icon" alt="icon LinkedIn"></a>
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends 'Base.html'%}
+{% load static %}
+{% block title %} Mein Portfolio {% endblock %}
+{% block content %}
+    <h1 id="title">Mein Portfolio</h1>
+<script src="{% static '/portfolio-sort.js' %}"></script>
+
+    <div class="projekte-container">
+        {% for row in all_Projects %}
+        <div class="projekte" onclick="window.location.href='/portfolio/{{ row.id }}/'">
+            {% if row.image %}
+                <img src="{{ row.image.url }}" alt="{{ row.name }}">
+            {% endif %}
+            <span>{{ row.name }}</span>
+            <span>{{ row.time }}</span>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block content2 %}
+    <div class = "contact">
+        <h2 id ='here'>Contact</h2>
+         <div class="contact-grid" >
+                <div class="contact-card">
+                    <h3>E-Mail</h3>
+                    <p>Elias.Chaibi@Student.HTW-Berlin.de</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>+49 176 3016 2380</p>
+                </div>
+            </div>
+    </div>
+{% endblock %}
+

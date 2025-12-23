@@ -1,0 +1,22 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'detailStyle.css'%}">{% endblock %}
+{% block title %}{{project.name}}{% endblock %}
+{% block content %}
+    
+<div class="container">
+    <div class="project-header">
+        <h1>{{ project.name }}</h1>
+        <h2>{{ project.time }}</h2>
+    </div>
+        {% if project.image %}
+            <img src="{{ project.image.url }}" id="projectImage" alt="{{ project.name }}">
+        {% endif %}
+
+        <p><strong>Skills polished:</strong> {{ project.Skills }}</p>
+
+      <div class = 'project-beschreibung'><p>{{ project.description }}</p> </div>  
+        
+    <div class = 'return-Link'> <a href="http://127.0.0.1:8000"> ← Zurück zur Übersicht</a></div>
+    </div>
+{% endblock %}

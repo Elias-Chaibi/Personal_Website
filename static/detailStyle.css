@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 10px;
+}
+#projectImage {
+    width: 100%;
+    max-width: 800px;
+    max-height: 1131px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+.project-beschreibung{
+    text-align: center;
+    width: 50%;
+}

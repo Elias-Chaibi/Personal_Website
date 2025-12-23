@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+}
+/* Navi below*/
+#toper {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #2f3f4f;
+    box-sizing: border-box;;
+}
+#toper .nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+#toper .nav-links a{
+    display: flex;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: beige;
+}
+#toper .nav-links a:hover{
+   color: #3498db;
+}
+
+/* content below */
+
+#title{
+    font-family: "Times New Roman";
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+body{
+ font-family: "Trebuchet MS";
+}
+#footer{
+    width: 100%;
+    height: 5%;
+    left: 0;
+    text-align: center;
+    background: #2f3f4f;
+    color: beige;
+    bottom: 0;
+    position: static;
+}
+#footer a {
+    font-size: 1.5rem;
+    color: #c1c1c1;
+    max-font-size: height;
+    text-decoration: none;
+}
+.icon{
+    width: 10px;!important;
+    height: 10px;!important;
+    max-width: 10px;
+    max-height: 10px;
+}
+#content{
+    padding-top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #edeff1;
+}
+/* content 2 below */
+
+.contact{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 45px;
+}
+.contact-grid{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.contact-card{
+    background-color: #edeff1;
+    box-shadow: 0 0 15px #c1c1c1;
+    text-align: center;
+    width: 300px;
+    min-height: 150px;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+.projekte{
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 60%;
+    max-width: 100px;
+    box-shadow: 0 0 15px gray;
+    }
+.projekte-container :hover{
+      transform: translateY(-5px);
+}
+.projekte img  {
+
+    height: 50%;
+    width: auto;
+    max-height: 80px;
+}
